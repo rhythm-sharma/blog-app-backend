@@ -1,8 +1,8 @@
 export default {
-  HOST: "ep-fragrant-block-a1y78k4r.ap-southeast-1.aws.neon.tech",
-  USER: "rrhythmsharma",
-  PASSWORD: "8bL9mYxzCriu",
-  DB: "neondb",
+  HOST: process.env.HOST,
+  USER: process.env.USER,
+  PASSWORD: process.env.PASSWORD,
+  DB: process.env.DB,
   dialect: "postgres",
   pool: {
     max: 5,
