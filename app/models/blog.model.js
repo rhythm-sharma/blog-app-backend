@@ -19,7 +19,7 @@ const blog = (sequelize, Sequelize) => {
       defaultValue: false,
     },
     background: {
-      type: Sequelize.STRING,
+      type: Sequelize.STRING(2048),
       allowNull: true,
     },
   });
