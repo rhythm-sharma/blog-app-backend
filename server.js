@@ -8,7 +8,11 @@ import routes from "./app/routes/index.js";
 const app = express();
 
 const corsOptions = {
-  origin: "http://localhost:3000",
+  origin: [
+    "http://localhost:3000",
+    "https://blog-app-frontend-isbb.vercel.app",
+  ],
+  default: "http://localhost:3000",
 };
 
 app.use(cors(corsOptions));
